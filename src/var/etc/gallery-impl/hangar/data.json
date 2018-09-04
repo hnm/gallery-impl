@@ -1,0 +1,24 @@
+{
+    "gallery\\impl\\common\\bo\\GalleryPageController": {
+        "gallery": {
+            "prop-def": "n2n\\impl\\persistence\\orm\\property\\hangar\\relation\\ManyToOnePropDef",
+            "props": {
+                "targetEntityClass": "gallery\\core\\bo\\Gallery",
+                "mappedBy": null,
+                "cascadeType": [],
+                "fetchType": "lazy"
+            }
+        }
+    },
+    "gallery\\impl\\common\\bo\\GalleryGroupPageController": {
+        "rootGalleryGroup": {
+            "prop-def": "n2n\\impl\\persistence\\orm\\property\\hangar\\relation\\ManyToOnePropDef",
+            "props": {
+                "targetEntityClass": "gallery\\core\\bo\\GalleryGroup",
+                "mappedBy": null,
+                "cascadeType": [],
+                "fetchType": "lazy"
+            }
+        }
+    }
+}

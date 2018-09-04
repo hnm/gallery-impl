@@ -1,0 +1,109 @@
+{
+    "types": {
+        "gallery-impl-gallery-group-page-controller": {
+            "nature": "entity",
+            "entity": "gallery\\impl\\common\\bo\\GalleryGroupPageController",
+            "dataSourceName": null,
+            "label": "Gallery Group",
+            "pluralLabel": "Gallery Groups",
+            "iconType": null,
+            "fields": {
+                "rootGalleryGroup": {
+                    "class": "rocket\\impl\\ei\\component\\prop\\relation\\ManyToOneSelectEiProp",
+                    "props": {
+                        "displayInOverview": true,
+                        "displayInDetailView": true,
+                        "displayInEditView": true,
+                        "displayInAddView": true,
+                        "constant": false,
+                        "readOnly": false,
+                        "mandatory": false,
+                        "draftable": false,
+                        "targetRemovalStrategy": "prevent",
+                        "embeddedAddEnabled": false,
+                        "filtered": false,
+                        "hiddenIfTargetEmpty": false
+                    },
+                    "label": "Root Gallery Group",
+                    "objectProperty": "rootGalleryGroup",
+                    "entityProperty": "rootGalleryGroup"
+                }
+            },
+            "commands": [],
+            "partialControlOrder": [],
+            "overallControlOrder": [],
+            "entryControlOrder": []
+        },
+        "gallery-impl-gallery-page-controller": {
+            "nature": "entity",
+            "entity": "gallery\\impl\\common\\bo\\GalleryPageController",
+            "dataSourceName": null,
+            "label": "Gallery",
+            "pluralLabel": "Galleries",
+            "iconType": null,
+            "fields": {
+                "gallery": {
+                    "class": "rocket\\impl\\ei\\component\\prop\\relation\\ManyToOneSelectEiProp",
+                    "props": {
+                        "displayInOverview": true,
+                        "displayInDetailView": true,
+                        "displayInEditView": true,
+                        "displayInAddView": true,
+                        "constant": false,
+                        "readOnly": false,
+                        "mandatory": true,
+                        "draftable": false,
+                        "targetRemovalStrategy": "prevent",
+                        "embeddedAddEnabled": false,
+                        "filtered": false,
+                        "hiddenIfTargetEmpty": false
+                    },
+                    "label": "Gallery",
+                    "objectProperty": "gallery",
+                    "entityProperty": "gallery"
+                }
+            },
+            "commands": [],
+            "partialControlOrder": [],
+            "overallControlOrder": [],
+            "entryControlOrder": []
+        },
+        "gallery-ci-gallery": {
+            "nature": "entity",
+            "entity": "gallery\\impl\\common\\bo\\CiGallery",
+            "dataSourceName": null,
+            "label": "Galerie",
+            "pluralLabel": "Galerien",
+            "iconType": null,
+            "fields": {
+                "gallery": {
+                    "class": "rocket\\impl\\ei\\component\\prop\\relation\\ManyToOneSelectEiProp",
+                    "props": {
+                        "displayInOverview": true,
+                        "displayInDetailView": true,
+                        "displayInEditView": true,
+                        "displayInAddView": true,
+                        "constant": false,
+                        "readOnly": false,
+                        "mandatory": false,
+                        "draftable": false,
+                        "targetExtensions": [],
+                        "targetRemovalStrategy": "prevent",
+                        "embeddedAddEnabled": false,
+                        "filtered": true,
+                        "hiddenIfTargetEmpty": false
+                    },
+                    "label": "Gallery",
+                    "objectProperty": "gallery",
+                    "entityProperty": "gallery"
+                }
+            },
+            "commands": [],
+            "partialControlOrder": [],
+            "overallControlOrder": [],
+            "entryControlOrder": []
+        }
+    },
+    "eiTypeExtensions": [],
+    "launchPads": []
+}
