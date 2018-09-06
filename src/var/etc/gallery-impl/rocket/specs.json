@@ -4,9 +4,15 @@
             "nature": "entity",
             "entity": "gallery\\impl\\common\\bo\\GalleryGroupPageController",
             "dataSourceName": null,
-            "label": "Gallery Group",
-            "pluralLabel": "Gallery Groups",
+            "label": "Galerie-Gruppe",
+            "pluralLabel": "Galerie-Gruppe",
             "iconType": null,
+            "filterData": {
+                "useAnd": true,
+                "items": [],
+                "groups": []
+            },
+            "defaultSort": [],
             "fields": {
                 "rootGalleryGroup": {
                     "class": "rocket\\impl\\ei\\component\\prop\\relation\\ManyToOneSelectEiProp",
@@ -19,6 +25,7 @@
                         "readOnly": false,
                         "mandatory": false,
                         "draftable": false,
+                        "targetExtensions": [],
                         "targetRemovalStrategy": "prevent",
                         "embeddedAddEnabled": false,
                         "filtered": false,
@@ -38,9 +45,15 @@
             "nature": "entity",
             "entity": "gallery\\impl\\common\\bo\\GalleryPageController",
             "dataSourceName": null,
-            "label": "Gallery",
-            "pluralLabel": "Galleries",
+            "label": "Gallerien",
+            "pluralLabel": "Gallerien",
             "iconType": null,
+            "filterData": {
+                "useAnd": true,
+                "items": [],
+                "groups": []
+            },
+            "defaultSort": [],
             "fields": {
                 "gallery": {
                     "class": "rocket\\impl\\ei\\component\\prop\\relation\\ManyToOneSelectEiProp",
@@ -53,6 +66,7 @@
                         "readOnly": false,
                         "mandatory": true,
                         "draftable": false,
+                        "targetExtensions": [],
                         "targetRemovalStrategy": "prevent",
                         "embeddedAddEnabled": false,
                         "filtered": false,
