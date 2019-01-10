@@ -32,7 +32,7 @@
 	<?php endif ?>
 <?php endif ?>
 <div class="row">
-	<?php if (count($childGalleryGroups = $galleryState->getChildGalleryGroups()) > 0): ?>
+	<?php if (count(/*$childGalleryGroups = */$galleryState->getChildGalleryGroups()) > 0): ?>
 		<?php foreach ($galleryState->getChildGalleryGroups() as $key => $childGalleryGroup): $childGalleryGroup instanceof GalleryGroup ?>
 			<?php if (!$childGalleryGroup->hasContent()) continue ?>
 			
