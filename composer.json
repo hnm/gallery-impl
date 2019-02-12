@@ -1,24 +1,29 @@
 {
-    "name": "hnm/gallery-impl",
-    "type": "n2n-tmpl-module",
-    "description": "Implementation for the gallery module",
-    "keywords": ["gallery","n2n-tmpl-module", "n2n-module", "n2n"],
-    "homepage": "https://n2n.rocks/",
-    "license": "MIT",
     "authors": [
         {
-            "name": "Thomas Günther",
-            "email": "guenther@hnm.ch"
+            "email": "guenther@hnm.ch",
+            "name": "Thomas G\u00fcnther"
         }
     ],
-    "require": {
-        "php": ">=7.0",
-        "n2n/n2n-composer-module-installer": "7.1.x-dev",
-        "hnm/gallery-core": "2.0.x-dev"
-    },
     "autoload": {
         "psr-4": {
             "gallery\\impl\\": "src/app/gallery/impl"
         }
-    }
+    },
+    "description": "Implementation for the gallery module",
+    "homepage": "https://n2n.rocks/",
+    "keywords": [
+        "gallery",
+        "n2n-tmpl-module",
+        "n2n-module",
+        "n2n"
+    ],
+    "license": "MIT",
+    "name": "hnm/gallery-impl",
+    "require": {
+        "hnm/gallery-core": "~2.0.0",
+        "n2n/n2n-composer-module-installer": "~7.1.1",
+        "php": ">=7.0"
+    },
+    "type": "n2n-tmpl-module"
 }
