@@ -6,14 +6,14 @@
             "dataSourceName": null,
             "label": "Galerie-Gruppe",
             "pluralLabel": "Galerie-Gruppe",
-            "iconType": null,
+            "iconType": "fas fa-images",
             "filterData": {
                 "useAnd": true,
                 "items": [],
                 "groups": []
             },
             "defaultSort": [],
-            "fields": {
+            "props": {
                 "rootGalleryGroup": {
                     "class": "rocket\\impl\\ei\\component\\prop\\relation\\ManyToOneSelectEiProp",
                     "props": {
@@ -21,15 +21,14 @@
                         "displayInDetailView": true,
                         "displayInEditView": true,
                         "displayInAddView": true,
+                        "containerType": "item",
                         "constant": false,
                         "readOnly": false,
                         "mandatory": false,
-                        "draftable": false,
-                        "targetExtensions": [],
                         "targetRemovalStrategy": "prevent",
-                        "embeddedAddEnabled": false,
-                        "filtered": false,
-                        "hiddenIfTargetEmpty": false
+                        "hiddenIfTargetEmpty": false,
+                        "maxPicksNum": "20",
+                        "quickSearchable": true
                     },
                     "label": "Root Gallery Group",
                     "objectProperty": "rootGalleryGroup",
@@ -47,14 +46,14 @@
             "dataSourceName": null,
             "label": "Gallerien",
             "pluralLabel": "Gallerien",
-            "iconType": null,
+            "iconType": "far fa-images",
             "filterData": {
                 "useAnd": true,
                 "items": [],
                 "groups": []
             },
             "defaultSort": [],
-            "fields": {
+            "props": {
                 "gallery": {
                     "class": "rocket\\impl\\ei\\component\\prop\\relation\\ManyToOneSelectEiProp",
                     "props": {
@@ -62,15 +61,14 @@
                         "displayInDetailView": true,
                         "displayInEditView": true,
                         "displayInAddView": true,
+                        "containerType": "item",
                         "constant": false,
                         "readOnly": false,
                         "mandatory": true,
-                        "draftable": false,
-                        "targetExtensions": [],
                         "targetRemovalStrategy": "prevent",
-                        "embeddedAddEnabled": false,
-                        "filtered": false,
-                        "hiddenIfTargetEmpty": false
+                        "hiddenIfTargetEmpty": false,
+                        "maxPicksNum": "20",
+                        "quickSearchable": true
                     },
                     "label": "Gallery",
                     "objectProperty": "gallery",
@@ -88,8 +86,14 @@
             "dataSourceName": null,
             "label": "Galerie",
             "pluralLabel": "Galerien",
-            "iconType": null,
-            "fields": {
+            "iconType": "fas fa-images",
+            "filterData": {
+                "useAnd": true,
+                "items": [],
+                "groups": []
+            },
+            "defaultSort": [],
+            "props": {
                 "gallery": {
                     "class": "rocket\\impl\\ei\\component\\prop\\relation\\ManyToOneSelectEiProp",
                     "props": {
@@ -97,15 +101,14 @@
                         "displayInDetailView": true,
                         "displayInEditView": true,
                         "displayInAddView": true,
+                        "containerType": "item",
                         "constant": false,
                         "readOnly": false,
                         "mandatory": false,
-                        "draftable": false,
-                        "targetExtensions": [],
                         "targetRemovalStrategy": "prevent",
-                        "embeddedAddEnabled": false,
-                        "filtered": true,
-                        "hiddenIfTargetEmpty": false
+                        "hiddenIfTargetEmpty": false,
+                        "maxPicksNum": "20",
+                        "quickSearchable": true
                     },
                     "label": "Gallery",
                     "objectProperty": "gallery",
