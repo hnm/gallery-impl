@@ -17,12 +17,20 @@
 	],
 	"require" : {
 		"php" : ">=7.0",
-		"n2n/n2n-composer-module-installer" : "^7.1",
+		"n2n/n2n-composer-module-installer" : "^7.1.3",
 		"hnm/gallery-core" : "^2.1"
+	},
+	"minimum-stability" : "dev",
+	"prefer-stable": true,
+	"config" : {
+		"vendor-dir" : "src/vendor"
 	},
 	"autoload" : {
 		"psr-4" : {
 			"gallery\\impl\\" : "src/app/gallery/impl"
 		}
+	},
+	"require-dev" : {
+		"phpunit/phpunit" : "^9.5"
 	}
 }
