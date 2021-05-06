@@ -30,6 +30,11 @@
 			"gallery\\impl\\" : "src/app/gallery/impl"
 		}
 	},
+	"autoload-dev" : {
+		"psr-4" : {
+			"gallery\\impl\\" : "src/test/gallery/impl"
+		}
+	},
 	"require-dev" : {
 		"phpunit/phpunit" : "^9.5"
 	}
